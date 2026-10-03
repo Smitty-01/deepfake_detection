@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software or research artifacts in your work, please cite it as below."
+title: "High-Fidelity Deepfake Detection Using a CNN and Bidirectional LSTM Pipeline"
+authors:
+  - family-names: "Kinariwala"
+    given-names: "Ashmit"
+  - family-names: "Kamdar"
+    given-names: "Aaryan"
+  - family-names: "Kulkarni"
+    given-names: "Atharv"
+  - family-names: "Purohit"
+    given-names: "Darshan"
+date-released: 2026-03-01
+conference:
+  name: "NIRMAAN 2026"
+  institution: "Department of Information Technology, SVKM"
+keywords:
+  - deepfake-detection
+  - computer-vision
+  - pytorch
+  - resnet50
+  - bilstm
+  - spatiotemporal-analysis
+  - yolov8

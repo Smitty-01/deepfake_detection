@@ -1,0 +1,34 @@
+/* Hide Streamlit branding */
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+
+/* Page background */
+.stApp {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* Card style */
+.card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+    margin-bottom: 20px;
+}
+
+/* Result badges */
+.badge-real {
+    background: #2ecc71;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.badge-fake {
+    background: #e74c3c;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+}

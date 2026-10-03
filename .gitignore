@@ -1,0 +1,41 @@
+# Python bytecode & environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.venv/
+venv/
+env/
+ENV/
+*.env
+
+# Model Checkpoints & Large Weights (>100MB / not for git)
+*.pth
+*.pt
+*.bin
+*.onnx
+weights/
+checkpoints/
+
+# Large Datasets & Media
+data/
+datasets/
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.zip
+*.tar
+*.tar.gz
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Old working copy folders
+ipdproject (Copy)/
+* (Copy)/
