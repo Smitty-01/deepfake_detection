@@ -39,3 +39,6 @@ desktop.ini
 # Old working copy folders
 ipdproject (Copy)/
 * (Copy)/
+* (Copy)/**
+ipd/
+ipdproject/
