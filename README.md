@@ -9,7 +9,7 @@
 [![Ultralytics YOLOv8](https://img.shields.io/badge/YOLO-v8-00FFFF.svg?logo=yolo&logoColor=black)](https://github.com/ultralytics/ultralytics)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B.svg?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Research: NIRMAAN 2026](https://img.shields.io/badge/Research-NIRMAAN%202026-6f42c1.svg)](assets/research_poster.png)
+[![Research: NIRMAAN 2026](https://img.shields.io/badge/Research-NIRMAAN%202026-6f42c1.svg)](#-authors--academic-citation)
 [![Test AUC](https://img.shields.io/badge/Test%20AUC-0.9429-success.svg)](assets/roc_curve.png)
 [![Recall](https://img.shields.io/badge/Deepfake%20Recall-92.00%25-green.svg)](assets/confusion_matrix.png)
 
@@ -99,12 +99,6 @@ All metric graphs are generated through deterministic validation runs on the tes
 
 </div>
 
-### SVKM IT NIRMAAN 2026 Research Poster
-
-<div align="center">
-  <img src="assets/research_poster.png" alt="NIRMAAN 2026 Research Poster" width="90%">
-  <p><i>Official Research Poster presented at NIRMAAN 2026, Department of Information Technology, SVKM</i></p>
-</div>
 
 ---
 
@@ -176,12 +170,11 @@ All metric graphs are generated through deterministic validation runs on the tes
 
 ```plaintext
 deepfake-detection/
-├── assets/                          # Publication figures, plots, styles & poster
+├── assets/                          # Diagnostic figures, plots & styles
 │   ├── confusion_matrix.png         # Test set confusion matrix
 │   ├── roc_curve.png                # ROC curve plot (AUC 0.9429)
 │   ├── precision_recall_curve.png   # Precision-recall diagnostic
 │   ├── probability_distribution.png # Real vs Fake probability separation
-│   ├── research_poster.png          # SVKM IT NIRMAAN 2026 conference poster
 │   └── style.css                    # Custom glassmorphic styling for Streamlit
 ├── splits/                          # Deterministic train/validation/test video splits
 │   ├── train.txt                    # 2,100 training video folder references

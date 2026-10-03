@@ -203,11 +203,10 @@ with st.sidebar:
     st.caption("ResNet50 + Bidirectional LSTM Video Classifier")
 
 # ---------------- MAIN APPLICATION ----------------
-tab_infer, tab_metrics, tab_arch, tab_poster = st.tabs([
+tab_infer, tab_metrics, tab_arch = st.tabs([
     "🔍 Live Detection",
     "📊 Evaluation Metrics",
-    "🧠 Model Architecture",
-    "📜 Research Poster"
+    "🧠 Model Architecture"
 ])
 
 # ----- TAB 1: INFERENCE -----
@@ -354,12 +353,3 @@ with tab_arch:
     4. **Classification Head:**
        - Temporal sequence mean pooling $\\rightarrow$ Linear(512, 256) $\\rightarrow$ ReLU $\\rightarrow$ Dropout(0.5) $\\rightarrow$ Linear(256, 1) $\\rightarrow$ Sigmoid activation.
     """)
-
-# ----- TAB 4: RESEARCH POSTER -----
-with tab_poster:
-    st.header("📜 SVKM IT NIRMAAN 2026 Poster")
-    poster_path = os.path.join(PROJECT_ROOT, "assets", "research_poster.png")
-    if os.path.exists(poster_path):
-        st.image(poster_path, caption="Research Poster - NIRMAAN 2026", use_container_width=True)
-    else:
-        st.info("Poster image not found in assets/research_poster.png.")
