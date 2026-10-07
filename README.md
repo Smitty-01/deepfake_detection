@@ -9,15 +9,10 @@
 [![Ultralytics YOLOv8](https://img.shields.io/badge/YOLO-v8-00FFFF.svg?logo=yolo&logoColor=black)](https://github.com/ultralytics/ultralytics)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B.svg?logo=streamlit&logoColor=white)](https://streamlit.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Research: NIRMAAN 2026](https://img.shields.io/badge/Research-NIRMAAN%202026-6f42c1.svg)](#-authors--academic-citation)
 [![Test AUC](https://img.shields.io/badge/Test%20AUC-0.9429-success.svg)](assets/roc_curve.png)
 [![Recall](https://img.shields.io/badge/Deepfake%20Recall-92.00%25-green.svg)](assets/confusion_matrix.png)
 
-<p align="center">
-  <b>Presented at NIRMAAN 2026</b><br>
-  <i>Department of Information Technology, SVKM</i><br>
-  <b>Authors:</b> Ashmit Kinariwala, Aaryan Kamdar, Atharv Kulkarni, Darshan Purohit
-</p>
+
 
 [Key Metrics](#-benchmark-performance--experimental-records) •
 [Architecture](#-system-architecture--methodology) •
@@ -56,16 +51,9 @@ Evaluated on an independent, balanced test dataset of **450 video sequences** dr
 | **F1-Score** | **86.79%** | Balanced harmonic mean under rigorous evaluation |
 | **Specificity** | **80.00%** | Correctly identified authentic videos (180 out of 225) |
 
-### Test Set Confusion Matrix Breakdown
 
-$$\begin{array}{c|cc}
-\text{\bf Actual \textbackslash Predicted} & \text{\bf Authentic (Real)} & \text{\bf Manipulated (Fake)} \\
-\hline
-\text{\bf Authentic (Real)} & \mathbf{180} \text{ (TN)} & 45 \text{ (FP)} \\
-\text{\bf Manipulated (Fake)} & 18 \text{ (FN)} & \mathbf{207} \text{ (TP)} \\
-\end{array}$$
 
-> **Key Takeaway:** The high recall ($92.00\%$) is especially crucial in forensic screening pipelines, where failing to catch a malicious deepfake (False Negative) is far more detrimental than a cautionary review flag.
+> **Key Takeaway:** The model achieved a recall of $\mathbf{92.00\%}$ for manipulated videos, correctly identifying 207 out of 225 manipulated samples. This minimizes false negatives, which is important for deepfake screening where missed manipulations can be more costly than false alarms.
 
 ---
 
@@ -359,26 +347,8 @@ data/
 
 ---
 
-## 👥 Authors & Academic Citation
 
-This project was developed and presented at **NIRMAAN 2026**, organized by the **Department of Information Technology, SVKM**:
 
-- **Ashmit Kinariwala**
-- **Aaryan Kamdar**
-- **Atharv Kulkarni**
-- **Darshan Purohit**
-
-### BibTeX Citation
-
-```bibtex
-@inproceedings{kinariwala2026deepfake,
-  title     = {High-Fidelity Deepfake Detection Using a CNN and Bidirectional LSTM Pipeline},
-  author    = {Kinariwala, Ashmit and Kamdar, Aaryan and Kulkarni, Atharv and Purohit, Darshan},
-  booktitle = {Proceedings of NIRMAAN 2026},
-  organization = {Department of Information Technology, SVKM},
-  year      = {2026}
-}
-```
 
 ---
 
